@@ -1,0 +1,1 @@
+[2025-07-23 19:14:52] model=GraDKT exp=1 Macro-ACC=0.7910, Macro-AUC=0.8577, Micro-ACC=0.7925, Micro-AUC=0.8577, Majority-ACC=0.8430, Majority-AUC=0.9342, Minority-ACC=0.6709, Minority-AUC=0.6190, loss=0.9694 

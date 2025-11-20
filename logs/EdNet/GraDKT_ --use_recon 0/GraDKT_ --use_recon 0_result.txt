@@ -1,0 +1,1 @@
+[2025-05-13 14:52:48] model=GraDKT exp= --use_recon 0 Macro-ACC=0.6826, Macro-AUC=0.7880, Micro-ACC=0.7306, Micro-AUC=0.7880, Majority-ACC=0.8886, Majority-AUC=0.9573, Minority-ACC=0.3446, Minority-AUC=0.2754, loss=0.6653 

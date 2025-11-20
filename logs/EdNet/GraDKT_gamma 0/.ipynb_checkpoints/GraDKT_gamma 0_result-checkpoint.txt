@@ -1,0 +1,1 @@
+[2025-05-13 08:55:13] model=CRKT exp=gamma 0 Macro-ACC=0.6938, Macro-AUC=0.7844, Micro-ACC=0.7255, Micro-AUC=0.7844, Majority-ACC=0.8631, Majority-AUC=0.9529, Minority-ACC=0.3891, Minority-AUC=0.2952, loss=0.7707 

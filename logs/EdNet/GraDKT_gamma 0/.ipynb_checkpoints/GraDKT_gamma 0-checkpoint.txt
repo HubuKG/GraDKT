@@ -1,0 +1,140 @@
+Namespace(dataset='EdNet', k_fold=5, input_dir='./data', output_dir='.', seed=42, exp_name='gamma 0', gpu=0, model='GraDKT', batch=64, epoch=100, lr=0.001, dim_c=32, dim_q=32, dropout=0.3, bias=True, lamb=0.2, layer_g=3, dim_g=32, top_k=10, alpha=0.01, beta=0.01, gamma=0.0, recon_weight=0.1, num_heads=8, d_ff=1024, n_blocks=2, graph_type='stat', device=device(type='cuda', index=0), dataset_path='./data/EdNet', log_path='./logs/EdNet/GraDKT_gamma 0', log_file='./logs/EdNet/GraDKT_gamma 0/GraDKT_gamma 0.txt', result_file='./logs/EdNet/GraDKT_gamma 0/GraDKT_gamma 0_result.txt', result_csv_file='./logs/EdNet/results.csv', save_path='./logs/EdNet/GraDKT_gamma 0/save', user=5000, question=12064, concept=189, option=4, max_concept_len=7)
+[2025-05-13 07:09:28] Training start
+[2025-05-13 07:10:26] epoch= 1 | Macro-ACC=0.5054, Macro-AUC=0.6295, Micro-ACC=0.6629, Micro-AUC=0.6295, Majority-ACC=0.8342, Majority-AUC=0.7275, Minority-ACC=0.2442, Minority-AUC=0.4305, loss=0.6310
+[2025-05-13 07:11:23] epoch= 2 | Macro-ACC=0.5242, Macro-AUC=0.6699, Micro-ACC=0.6713, Micro-AUC=0.6699, Majority-ACC=0.8484, Majority-AUC=0.7715, Minority-ACC=0.2386, Minority-AUC=0.4417, loss=0.6132
+[2025-05-13 07:12:19] epoch= 3 | Macro-ACC=0.5463, Macro-AUC=0.6921, Micro-ACC=0.6812, Micro-AUC=0.6921, Majority-ACC=0.8682, Majority-AUC=0.8319, Minority-ACC=0.2242, Minority-AUC=0.3667, loss=0.6018
+[2025-05-13 07:13:18] epoch= 4 | Macro-ACC=0.5651, Macro-AUC=0.7102, Micro-ACC=0.6895, Micro-AUC=0.7102, Majority-ACC=0.8820, Majority-AUC=0.8788, Minority-ACC=0.2191, Minority-AUC=0.3025, loss=0.5911
+[2025-05-13 07:14:14] epoch= 5 | Macro-ACC=0.5798, Macro-AUC=0.7230, Micro-ACC=0.6952, Micro-AUC=0.7230, Majority-ACC=0.8931, Majority-AUC=0.9022, Minority-ACC=0.2117, Minority-AUC=0.2735, loss=0.5825
+[2025-05-13 07:15:10] epoch= 6 | Macro-ACC=0.5862, Macro-AUC=0.7328, Micro-ACC=0.6989, Micro-AUC=0.7328, Majority-ACC=0.9024, Majority-AUC=0.9231, Minority-ACC=0.2016, Minority-AUC=0.2402, loss=0.5765
+[2025-05-13 07:16:09] epoch= 7 | Macro-ACC=0.6033, Macro-AUC=0.7378, Micro-ACC=0.7031, Micro-AUC=0.7378, Majority-ACC=0.9093, Majority-AUC=0.9363, Minority-ACC=0.1992, Minority-AUC=0.2115, loss=0.5716
+[2025-05-13 07:17:05] epoch= 8 | Macro-ACC=0.6101, Macro-AUC=0.7421, Micro-ACC=0.7062, Micro-AUC=0.7421, Majority-ACC=0.9133, Majority-AUC=0.9403, Minority-ACC=0.2004, Minority-AUC=0.2124, loss=0.5679
+[2025-05-13 07:18:00] epoch= 9 | Macro-ACC=0.6152, Macro-AUC=0.7465, Micro-ACC=0.7089, Micro-AUC=0.7465, Majority-ACC=0.9234, Majority-AUC=0.9553, Minority-ACC=0.1848, Minority-AUC=0.1751, loss=0.5647
+[2025-05-13 07:18:36] epoch=10 | Macro-ACC=0.6154, Macro-AUC=0.7492, Micro-ACC=0.7102, Micro-AUC=0.7492, Majority-ACC=0.9266, Majority-AUC=0.9574, Minority-ACC=0.1814, Minority-AUC=0.1765, loss=0.5631
+[2025-05-13 07:19:07] epoch=11 | Macro-ACC=0.6248, Macro-AUC=0.7510, Micro-ACC=0.7123, Micro-AUC=0.7510, Majority-ACC=0.9241, Majority-AUC=0.9570, Minority-ACC=0.1948, Minority-AUC=0.1835, loss=0.5609
+[2025-05-13 07:19:44] epoch=12 | Macro-ACC=0.6208, Macro-AUC=0.7522, Micro-ACC=0.7126, Micro-AUC=0.7522, Majority-ACC=0.9266, Majority-AUC=0.9579, Minority-ACC=0.1896, Minority-AUC=0.1859, loss=0.5604
+[2025-05-13 07:20:42] epoch=13 | Macro-ACC=0.6209, Macro-AUC=0.7540, Micro-ACC=0.7128, Micro-AUC=0.7540, Majority-ACC=0.9290, Majority-AUC=0.9593, Minority-ACC=0.1846, Minority-AUC=0.1851, loss=0.5593
+[2025-05-13 07:21:39] epoch=14 | Macro-ACC=0.6340, Macro-AUC=0.7545, Micro-ACC=0.7151, Micro-AUC=0.7545, Majority-ACC=0.9266, Majority-AUC=0.9622, Minority-ACC=0.1984, Minority-AUC=0.1759, loss=0.5578
+[2025-05-13 07:22:36] epoch=15 | Macro-ACC=0.6322, Macro-AUC=0.7559, Micro-ACC=0.7156, Micro-AUC=0.7559, Majority-ACC=0.9352, Majority-AUC=0.9692, Minority-ACC=0.1789, Minority-AUC=0.1519, loss=0.5567
+[2025-05-13 07:23:35] epoch=16 | Macro-ACC=0.6395, Macro-AUC=0.7561, Micro-ACC=0.7163, Micro-AUC=0.7561, Majority-ACC=0.9279, Majority-AUC=0.9656, Minority-ACC=0.1993, Minority-AUC=0.1679, loss=0.5565
+[2025-05-13 07:24:31] epoch=17 | Macro-ACC=0.6315, Macro-AUC=0.7579, Micro-ACC=0.7167, Micro-AUC=0.7579, Majority-ACC=0.9291, Majority-AUC=0.9609, Minority-ACC=0.1979, Minority-AUC=0.1911, loss=0.5563
+[2025-05-13 07:25:28] epoch=18 | Macro-ACC=0.6363, Macro-AUC=0.7583, Micro-ACC=0.7170, Micro-AUC=0.7583, Majority-ACC=0.9306, Majority-AUC=0.9649, Minority-ACC=0.1949, Minority-AUC=0.1764, loss=0.5547
+[2025-05-13 07:26:27] epoch=19 | Macro-ACC=0.6412, Macro-AUC=0.7585, Micro-ACC=0.7177, Micro-AUC=0.7585, Majority-ACC=0.9285, Majority-AUC=0.9649, Minority-ACC=0.2027, Minority-AUC=0.1785, loss=0.5546
+[2025-05-13 07:27:23] epoch=20 | Macro-ACC=0.6381, Macro-AUC=0.7599, Micro-ACC=0.7183, Micro-AUC=0.7599, Majority-ACC=0.9340, Majority-AUC=0.9681, Minority-ACC=0.1912, Minority-AUC=0.1694, loss=0.5542
+[2025-05-13 07:28:22] epoch=21 | Macro-ACC=0.6413, Macro-AUC=0.7597, Micro-ACC=0.7184, Micro-AUC=0.7597, Majority-ACC=0.9299, Majority-AUC=0.9651, Minority-ACC=0.2016, Minority-AUC=0.1807, loss=0.5536
+Patience count: 1/20. Best Macro-AUC so far: 0.7599, current: 0.7597
+[2025-05-13 07:29:18] epoch=22 | Macro-ACC=0.6408, Macro-AUC=0.7599, Micro-ACC=0.7194, Micro-AUC=0.7599, Majority-ACC=0.9275, Majority-AUC=0.9605, Minority-ACC=0.2111, Minority-AUC=0.2002, loss=0.5542
+Patience count: 2/20. Best Macro-AUC so far: 0.7599, current: 0.7599
+[2025-05-13 07:30:14] epoch=23 | Macro-ACC=0.6471, Macro-AUC=0.7610, Micro-ACC=0.7198, Micro-AUC=0.7610, Majority-ACC=0.9291, Majority-AUC=0.9678, Minority-ACC=0.2081, Minority-AUC=0.1749, loss=0.5529
+[2025-05-13 07:31:13] epoch=24 | Macro-ACC=0.6499, Macro-AUC=0.7612, Micro-ACC=0.7200, Micro-AUC=0.7612, Majority-ACC=0.9314, Majority-AUC=0.9724, Minority-ACC=0.2036, Minority-AUC=0.1562, loss=0.5527
+[2025-05-13 07:32:09] epoch=25 | Macro-ACC=0.6467, Macro-AUC=0.7616, Micro-ACC=0.7200, Micro-AUC=0.7616, Majority-ACC=0.9278, Majority-AUC=0.9659, Minority-ACC=0.2122, Minority-AUC=0.1843, loss=0.5525
+[2025-05-13 07:33:06] epoch=26 | Macro-ACC=0.6508, Macro-AUC=0.7616, Micro-ACC=0.7204, Micro-AUC=0.7616, Majority-ACC=0.9259, Majority-AUC=0.9672, Minority-ACC=0.2182, Minority-AUC=0.1801, loss=0.5528
+Patience count: 1/20. Best Macro-AUC so far: 0.7616, current: 0.7616
+[2025-05-13 07:34:04] epoch=27 | Macro-ACC=0.6500, Macro-AUC=0.7630, Micro-ACC=0.7211, Micro-AUC=0.7630, Majority-ACC=0.9300, Majority-AUC=0.9696, Minority-ACC=0.2105, Minority-AUC=0.1734, loss=0.5515
+[2025-05-13 07:35:01] epoch=28 | Macro-ACC=0.6521, Macro-AUC=0.7634, Micro-ACC=0.7207, Micro-AUC=0.7634, Majority-ACC=0.9262, Majority-AUC=0.9688, Minority-ACC=0.2187, Minority-AUC=0.1768, loss=0.5514
+[2025-05-13 07:35:57] epoch=29 | Macro-ACC=0.6490, Macro-AUC=0.7633, Micro-ACC=0.7208, Micro-AUC=0.7633, Majority-ACC=0.9273, Majority-AUC=0.9660, Minority-ACC=0.2162, Minority-AUC=0.1886, loss=0.5523
+Patience count: 1/20. Best Macro-AUC so far: 0.7634, current: 0.7633
+[2025-05-13 07:36:55] epoch=30 | Macro-ACC=0.6469, Macro-AUC=0.7644, Micro-ACC=0.7218, Micro-AUC=0.7644, Majority-ACC=0.9304, Majority-AUC=0.9672, Minority-ACC=0.2121, Minority-AUC=0.1872, loss=0.5538
+[2025-05-13 07:37:52] epoch=31 | Macro-ACC=0.6549, Macro-AUC=0.7635, Micro-ACC=0.7208, Micro-AUC=0.7635, Majority-ACC=0.9235, Majority-AUC=0.9690, Minority-ACC=0.2253, Minority-AUC=0.1799, loss=0.5525
+Patience count: 1/20. Best Macro-AUC so far: 0.7644, current: 0.7635
+[2025-05-13 07:38:50] epoch=32 | Macro-ACC=0.6510, Macro-AUC=0.7646, Micro-ACC=0.7223, Micro-AUC=0.7646, Majority-ACC=0.9261, Majority-AUC=0.9645, Minority-ACC=0.2242, Minority-AUC=0.1981, loss=0.5530
+[2025-05-13 07:39:46] epoch=33 | Macro-ACC=0.6561, Macro-AUC=0.7643, Micro-ACC=0.7218, Micro-AUC=0.7643, Majority-ACC=0.9223, Majority-AUC=0.9665, Minority-ACC=0.2320, Minority-AUC=0.1908, loss=0.5533
+Patience count: 1/20. Best Macro-AUC so far: 0.7646, current: 0.7643
+[2025-05-13 07:40:43] epoch=34 | Macro-ACC=0.6556, Macro-AUC=0.7645, Micro-ACC=0.7217, Micro-AUC=0.7645, Majority-ACC=0.9194, Majority-AUC=0.9641, Minority-ACC=0.2387, Minority-AUC=0.2006, loss=0.5564
+Patience count: 2/20. Best Macro-AUC so far: 0.7646, current: 0.7645
+[2025-05-13 07:41:42] epoch=35 | Macro-ACC=0.6540, Macro-AUC=0.7650, Micro-ACC=0.7224, Micro-AUC=0.7650, Majority-ACC=0.9255, Majority-AUC=0.9673, Minority-ACC=0.2260, Minority-AUC=0.1886, loss=0.5532
+[2025-05-13 07:42:38] epoch=36 | Macro-ACC=0.6512, Macro-AUC=0.7659, Micro-ACC=0.7230, Micro-AUC=0.7659, Majority-ACC=0.9269, Majority-AUC=0.9649, Minority-ACC=0.2247, Minority-AUC=0.1997, loss=0.5585
+[2025-05-13 07:43:34] epoch=37 | Macro-ACC=0.6602, Macro-AUC=0.7656, Micro-ACC=0.7218, Micro-AUC=0.7656, Majority-ACC=0.9198, Majority-AUC=0.9705, Minority-ACC=0.2379, Minority-AUC=0.1769, loss=0.5552
+Patience count: 1/20. Best Macro-AUC so far: 0.7659, current: 0.7656
+[2025-05-13 07:44:33] epoch=38 | Macro-ACC=0.6551, Macro-AUC=0.7656, Micro-ACC=0.7219, Micro-AUC=0.7656, Majority-ACC=0.9198, Majority-AUC=0.9646, Minority-ACC=0.2380, Minority-AUC=0.2015, loss=0.5576
+Patience count: 2/20. Best Macro-AUC so far: 0.7659, current: 0.7656
+[2025-05-13 07:45:29] epoch=39 | Macro-ACC=0.6496, Macro-AUC=0.7664, Micro-ACC=0.7228, Micro-AUC=0.7664, Majority-ACC=0.9251, Majority-AUC=0.9623, Minority-ACC=0.2286, Minority-AUC=0.2102, loss=0.5628
+[2025-05-13 07:46:26] epoch=40 | Macro-ACC=0.6553, Macro-AUC=0.7667, Micro-ACC=0.7235, Micro-AUC=0.7667, Majority-ACC=0.9240, Majority-AUC=0.9646, Minority-ACC=0.2333, Minority-AUC=0.2033, loss=0.5593
+[2025-05-13 07:47:24] epoch=41 | Macro-ACC=0.6572, Macro-AUC=0.7672, Micro-ACC=0.7236, Micro-AUC=0.7672, Majority-ACC=0.9202, Majority-AUC=0.9633, Minority-ACC=0.2430, Minority-AUC=0.2098, loss=0.5615
+[2025-05-13 07:48:20] epoch=42 | Macro-ACC=0.6606, Macro-AUC=0.7675, Micro-ACC=0.7234, Micro-AUC=0.7675, Majority-ACC=0.9205, Majority-AUC=0.9686, Minority-ACC=0.2417, Minority-AUC=0.1900, loss=0.5593
+[2025-05-13 07:49:18] epoch=43 | Macro-ACC=0.6566, Macro-AUC=0.7670, Micro-ACC=0.7231, Micro-AUC=0.7670, Majority-ACC=0.9193, Majority-AUC=0.9622, Minority-ACC=0.2438, Minority-AUC=0.2133, loss=0.5630
+Patience count: 1/20. Best Macro-AUC so far: 0.7675, current: 0.7670
+[2025-05-13 07:50:15] epoch=44 | Macro-ACC=0.6581, Macro-AUC=0.7682, Micro-ACC=0.7235, Micro-AUC=0.7682, Majority-ACC=0.9193, Majority-AUC=0.9636, Minority-ACC=0.2450, Minority-AUC=0.2118, loss=0.5645
+[2025-05-13 07:51:12] epoch=45 | Macro-ACC=0.6584, Macro-AUC=0.7688, Micro-ACC=0.7237, Micro-AUC=0.7688, Majority-ACC=0.9215, Majority-AUC=0.9670, Minority-ACC=0.2401, Minority-AUC=0.1974, loss=0.5668
+[2025-05-13 07:52:10] epoch=46 | Macro-ACC=0.6648, Macro-AUC=0.7680, Micro-ACC=0.7225, Micro-AUC=0.7680, Majority-ACC=0.9115, Majority-AUC=0.9665, Minority-ACC=0.2606, Minority-AUC=0.2003, loss=0.5624
+Patience count: 1/20. Best Macro-AUC so far: 0.7688, current: 0.7680
+[2025-05-13 07:53:06] epoch=47 | Macro-ACC=0.6654, Macro-AUC=0.7680, Micro-ACC=0.7222, Micro-AUC=0.7680, Majority-ACC=0.9076, Majority-AUC=0.9633, Minority-ACC=0.2692, Minority-AUC=0.2131, loss=0.5635
+Patience count: 2/20. Best Macro-AUC so far: 0.7688, current: 0.7680
+[2025-05-13 07:54:02] epoch=48 | Macro-ACC=0.6636, Macro-AUC=0.7697, Micro-ACC=0.7236, Micro-AUC=0.7697, Majority-ACC=0.9133, Majority-AUC=0.9651, Minority-ACC=0.2601, Minority-AUC=0.2086, loss=0.5690
+[2025-05-13 07:55:00] epoch=49 | Macro-ACC=0.6639, Macro-AUC=0.7693, Micro-ACC=0.7239, Micro-AUC=0.7693, Majority-ACC=0.9134, Majority-AUC=0.9640, Minority-ACC=0.2609, Minority-AUC=0.2124, loss=0.5736
+Patience count: 1/20. Best Macro-AUC so far: 0.7697, current: 0.7693
+[2025-05-13 07:55:57] epoch=50 | Macro-ACC=0.6583, Macro-AUC=0.7700, Micro-ACC=0.7244, Micro-AUC=0.7700, Majority-ACC=0.9174, Majority-AUC=0.9608, Minority-ACC=0.2527, Minority-AUC=0.2250, loss=0.5821
+[2025-05-13 07:56:53] epoch=51 | Macro-ACC=0.6668, Macro-AUC=0.7698, Micro-ACC=0.7230, Micro-AUC=0.7698, Majority-ACC=0.9070, Majority-AUC=0.9643, Minority-ACC=0.2735, Minority-AUC=0.2139, loss=0.5708
+Patience count: 1/20. Best Macro-AUC so far: 0.7700, current: 0.7698
+[2025-05-13 07:57:51] epoch=52 | Macro-ACC=0.6640, Macro-AUC=0.7696, Micro-ACC=0.7234, Micro-AUC=0.7696, Majority-ACC=0.9090, Majority-AUC=0.9599, Minority-ACC=0.2699, Minority-AUC=0.2279, loss=0.5867
+Patience count: 2/20. Best Macro-AUC so far: 0.7700, current: 0.7696
+[2025-05-13 07:58:48] epoch=53 | Macro-ACC=0.6684, Macro-AUC=0.7706, Micro-ACC=0.7232, Micro-AUC=0.7706, Majority-ACC=0.9058, Majority-AUC=0.9645, Minority-ACC=0.2770, Minority-AUC=0.2121, loss=0.5789
+[2025-05-13 07:59:46] epoch=54 | Macro-ACC=0.6670, Macro-AUC=0.7714, Micro-ACC=0.7239, Micro-AUC=0.7714, Majority-ACC=0.9116, Majority-AUC=0.9669, Minority-ACC=0.2652, Minority-AUC=0.2049, loss=0.5835
+[2025-05-13 08:00:44] epoch=55 | Macro-ACC=0.6711, Macro-AUC=0.7705, Micro-ACC=0.7223, Micro-AUC=0.7705, Majority-ACC=0.9010, Majority-AUC=0.9641, Minority-ACC=0.2857, Minority-AUC=0.2145, loss=0.5784
+Patience count: 1/20. Best Macro-AUC so far: 0.7714, current: 0.7705
+[2025-05-13 08:01:40] epoch=56 | Macro-ACC=0.6663, Macro-AUC=0.7717, Micro-ACC=0.7240, Micro-AUC=0.7717, Majority-ACC=0.9092, Majority-AUC=0.9631, Minority-ACC=0.2715, Minority-AUC=0.2194, loss=0.5946
+[2025-05-13 08:02:44] epoch=57 | Macro-ACC=0.6626, Macro-AUC=0.7721, Micro-ACC=0.7245, Micro-AUC=0.7721, Majority-ACC=0.9110, Majority-AUC=0.9594, Minority-ACC=0.2687, Minority-AUC=0.2375, loss=0.5948
+[2025-05-13 08:03:57] epoch=58 | Macro-ACC=0.6684, Macro-AUC=0.7724, Micro-ACC=0.7249, Micro-AUC=0.7724, Majority-ACC=0.9102, Majority-AUC=0.9649, Minority-ACC=0.2719, Minority-AUC=0.2164, loss=0.5972
+[2025-05-13 08:05:09] epoch=59 | Macro-ACC=0.6701, Macro-AUC=0.7724, Micro-ACC=0.7241, Micro-AUC=0.7724, Majority-ACC=0.9042, Majority-AUC=0.9628, Minority-ACC=0.2839, Minority-AUC=0.2255, loss=0.5938
+[2025-05-13 08:06:24] epoch=60 | Macro-ACC=0.6661, Macro-AUC=0.7729, Micro-ACC=0.7252, Micro-AUC=0.7729, Majority-ACC=0.9058, Majority-AUC=0.9561, Minority-ACC=0.2837, Minority-AUC=0.2508, loss=0.6101
+[2025-05-13 08:07:37] epoch=61 | Macro-ACC=0.6689, Macro-AUC=0.7742, Micro-ACC=0.7257, Micro-AUC=0.7742, Majority-ACC=0.9094, Majority-AUC=0.9641, Minority-ACC=0.2768, Minority-AUC=0.2241, loss=0.6033
+[2025-05-13 08:08:49] epoch=62 | Macro-ACC=0.6722, Macro-AUC=0.7737, Micro-ACC=0.7242, Micro-AUC=0.7737, Majority-ACC=0.9017, Majority-AUC=0.9636, Minority-ACC=0.2905, Minority-AUC=0.2254, loss=0.6052
+Patience count: 1/20. Best Macro-AUC so far: 0.7742, current: 0.7737
+[2025-05-13 08:10:04] epoch=63 | Macro-ACC=0.6764, Macro-AUC=0.7715, Micro-ACC=0.7205, Micro-AUC=0.7715, Majority-ACC=0.8874, Majority-AUC=0.9643, Minority-ACC=0.3127, Minority-AUC=0.2198, loss=0.5908
+Patience count: 2/20. Best Macro-AUC so far: 0.7742, current: 0.7715
+[2025-05-13 08:11:17] epoch=64 | Macro-ACC=0.6716, Macro-AUC=0.7742, Micro-ACC=0.7248, Micro-AUC=0.7742, Majority-ACC=0.9041, Majority-AUC=0.9641, Minority-ACC=0.2865, Minority-AUC=0.2247, loss=0.6069
+[2025-05-13 08:12:31] epoch=65 | Macro-ACC=0.6732, Macro-AUC=0.7755, Micro-ACC=0.7250, Micro-AUC=0.7755, Majority-ACC=0.9009, Majority-AUC=0.9626, Minority-ACC=0.2952, Minority-AUC=0.2331, loss=0.6089
+[2025-05-13 08:13:45] epoch=66 | Macro-ACC=0.6750, Macro-AUC=0.7743, Micro-ACC=0.7234, Micro-AUC=0.7743, Majority-ACC=0.8959, Majority-AUC=0.9644, Minority-ACC=0.3016, Minority-AUC=0.2237, loss=0.6090
+Patience count: 1/20. Best Macro-AUC so far: 0.7755, current: 0.7743
+[2025-05-13 08:14:58] epoch=67 | Macro-ACC=0.6763, Macro-AUC=0.7746, Micro-ACC=0.7235, Micro-AUC=0.7746, Majority-ACC=0.8947, Majority-AUC=0.9641, Minority-ACC=0.3050, Minority-AUC=0.2262, loss=0.6212
+Patience count: 2/20. Best Macro-AUC so far: 0.7755, current: 0.7746
+[2025-05-13 08:16:12] epoch=68 | Macro-ACC=0.6759, Macro-AUC=0.7751, Micro-ACC=0.7243, Micro-AUC=0.7751, Majority-ACC=0.8947, Majority-AUC=0.9613, Minority-ACC=0.3079, Minority-AUC=0.2394, loss=0.6180
+Patience count: 3/20. Best Macro-AUC so far: 0.7755, current: 0.7751
+[2025-05-13 08:17:25] epoch=69 | Macro-ACC=0.6776, Macro-AUC=0.7751, Micro-ACC=0.7229, Micro-AUC=0.7751, Majority-ACC=0.8890, Majority-AUC=0.9619, Minority-ACC=0.3171, Minority-AUC=0.2383, loss=0.6188
+Patience count: 4/20. Best Macro-AUC so far: 0.7755, current: 0.7751
+[2025-05-13 08:18:37] epoch=70 | Macro-ACC=0.6779, Macro-AUC=0.7767, Micro-ACC=0.7246, Micro-AUC=0.7767, Majority-ACC=0.8937, Majority-AUC=0.9628, Minority-ACC=0.3116, Minority-AUC=0.2376, loss=0.6310
+[2025-05-13 08:19:51] epoch=71 | Macro-ACC=0.6821, Macro-AUC=0.7760, Micro-ACC=0.7229, Micro-AUC=0.7760, Majority-ACC=0.8849, Majority-AUC=0.9634, Minority-ACC=0.3271, Minority-AUC=0.2335, loss=0.6190
+Patience count: 1/20. Best Macro-AUC so far: 0.7767, current: 0.7760
+[2025-05-13 08:21:04] epoch=72 | Macro-ACC=0.6718, Macro-AUC=0.7773, Micro-ACC=0.7261, Micro-AUC=0.7773, Majority-ACC=0.9001, Majority-AUC=0.9573, Minority-ACC=0.3009, Minority-AUC=0.2576, loss=0.6516
+[2025-05-13 08:22:16] epoch=73 | Macro-ACC=0.6790, Macro-AUC=0.7769, Micro-ACC=0.7235, Micro-AUC=0.7769, Majority-ACC=0.8893, Majority-AUC=0.9628, Minority-ACC=0.3184, Minority-AUC=0.2387, loss=0.6340
+Patience count: 1/20. Best Macro-AUC so far: 0.7773, current: 0.7769
+[2025-05-13 08:23:30] epoch=74 | Macro-ACC=0.6760, Macro-AUC=0.7773, Micro-ACC=0.7258, Micro-AUC=0.7773, Majority-ACC=0.8944, Majority-AUC=0.9577, Minority-ACC=0.3136, Minority-AUC=0.2571, loss=0.6475
+[2025-05-13 08:24:42] epoch=75 | Macro-ACC=0.6810, Macro-AUC=0.7774, Micro-ACC=0.7246, Micro-AUC=0.7774, Majority-ACC=0.8895, Majority-AUC=0.9642, Minority-ACC=0.3215, Minority-AUC=0.2334, loss=0.6374
+[2025-05-13 08:25:55] epoch=76 | Macro-ACC=0.6830, Macro-AUC=0.7780, Micro-ACC=0.7241, Micro-AUC=0.7780, Majority-ACC=0.8855, Majority-AUC=0.9631, Minority-ACC=0.3295, Minority-AUC=0.2411, loss=0.6502
+[2025-05-13 08:27:09] epoch=77 | Macro-ACC=0.6834, Macro-AUC=0.7773, Micro-ACC=0.7233, Micro-AUC=0.7773, Majority-ACC=0.8801, Majority-AUC=0.9597, Minority-ACC=0.3401, Minority-AUC=0.2515, loss=0.6597
+Patience count: 1/20. Best Macro-AUC so far: 0.7780, current: 0.7773
+[2025-05-13 08:28:22] epoch=78 | Macro-ACC=0.6833, Macro-AUC=0.7770, Micro-ACC=0.7226, Micro-AUC=0.7770, Majority-ACC=0.8797, Majority-AUC=0.9609, Minority-ACC=0.3388, Minority-AUC=0.2458, loss=0.6586
+Patience count: 2/20. Best Macro-AUC so far: 0.7780, current: 0.7770
+[2025-05-13 08:29:34] epoch=79 | Macro-ACC=0.6817, Macro-AUC=0.7790, Micro-ACC=0.7254, Micro-AUC=0.7790, Majority-ACC=0.8880, Majority-AUC=0.9608, Minority-ACC=0.3283, Minority-AUC=0.2508, loss=0.6727
+[2025-05-13 08:30:47] epoch=80 | Macro-ACC=0.6819, Macro-AUC=0.7787, Micro-ACC=0.7250, Micro-AUC=0.7787, Majority-ACC=0.8867, Majority-AUC=0.9601, Minority-ACC=0.3300, Minority-AUC=0.2524, loss=0.6772
+Patience count: 1/20. Best Macro-AUC so far: 0.7790, current: 0.7787
+[2025-05-13 08:31:59] epoch=81 | Macro-ACC=0.6853, Macro-AUC=0.7786, Micro-ACC=0.7240, Micro-AUC=0.7786, Majority-ACC=0.8810, Majority-AUC=0.9625, Minority-ACC=0.3405, Minority-AUC=0.2455, loss=0.6683
+Patience count: 2/20. Best Macro-AUC so far: 0.7790, current: 0.7786
+[2025-05-13 08:33:11] epoch=82 | Macro-ACC=0.6824, Macro-AUC=0.7796, Micro-ACC=0.7253, Micro-AUC=0.7796, Majority-ACC=0.8864, Majority-AUC=0.9613, Minority-ACC=0.3315, Minority-AUC=0.2515, loss=0.6712
+[2025-05-13 08:34:24] epoch=83 | Macro-ACC=0.6856, Macro-AUC=0.7803, Micro-ACC=0.7248, Micro-AUC=0.7803, Majority-ACC=0.8803, Majority-AUC=0.9608, Minority-ACC=0.3449, Minority-AUC=0.2551, loss=0.6701
+[2025-05-13 08:35:35] epoch=84 | Macro-ACC=0.6860, Macro-AUC=0.7807, Micro-ACC=0.7249, Micro-AUC=0.7807, Majority-ACC=0.8793, Majority-AUC=0.9602, Minority-ACC=0.3476, Minority-AUC=0.2581, loss=0.6849
+[2025-05-13 08:36:49] epoch=85 | Macro-ACC=0.6852, Macro-AUC=0.7803, Micro-ACC=0.7250, Micro-AUC=0.7803, Majority-ACC=0.8799, Majority-AUC=0.9588, Minority-ACC=0.3463, Minority-AUC=0.2608, loss=0.6924
+Patience count: 1/20. Best Macro-AUC so far: 0.7807, current: 0.7803
+[2025-05-13 08:38:01] epoch=86 | Macro-ACC=0.6880, Macro-AUC=0.7811, Micro-ACC=0.7246, Micro-AUC=0.7811, Majority-ACC=0.8749, Majority-AUC=0.9596, Minority-ACC=0.3570, Minority-AUC=0.2615, loss=0.6994
+[2025-05-13 08:39:13] epoch=87 | Macro-ACC=0.6852, Macro-AUC=0.7813, Micro-ACC=0.7261, Micro-AUC=0.7813, Majority-ACC=0.8818, Majority-AUC=0.9571, Minority-ACC=0.3456, Minority-AUC=0.2696, loss=0.7398
+[2025-05-13 08:40:27] epoch=88 | Macro-ACC=0.6840, Macro-AUC=0.7815, Micro-ACC=0.7265, Micro-AUC=0.7815, Majority-ACC=0.8809, Majority-AUC=0.9538, Minority-ACC=0.3492, Minority-AUC=0.2846, loss=0.7236
+[2025-05-13 08:41:39] epoch=89 | Macro-ACC=0.6882, Macro-AUC=0.7821, Micro-ACC=0.7264, Micro-AUC=0.7821, Majority-ACC=0.8783, Majority-AUC=0.9584, Minority-ACC=0.3552, Minority-AUC=0.2693, loss=0.7169
+[2025-05-13 08:42:51] epoch=90 | Macro-ACC=0.6876, Macro-AUC=0.7819, Micro-ACC=0.7255, Micro-AUC=0.7819, Majority-ACC=0.8757, Majority-AUC=0.9564, Minority-ACC=0.3585, Minority-AUC=0.2766, loss=0.7204
+Patience count: 1/20. Best Macro-AUC so far: 0.7821, current: 0.7819
+[2025-05-13 08:44:00] epoch=91 | Macro-ACC=0.6891, Macro-AUC=0.7825, Micro-ACC=0.7256, Micro-AUC=0.7825, Majority-ACC=0.8741, Majority-AUC=0.9574, Minority-ACC=0.3627, Minority-AUC=0.2735, loss=0.7455
+[2025-05-13 08:45:13] epoch=92 | Macro-ACC=0.6904, Macro-AUC=0.7828, Micro-ACC=0.7255, Micro-AUC=0.7828, Majority-ACC=0.8721, Majority-AUC=0.9574, Minority-ACC=0.3672, Minority-AUC=0.2744, loss=0.7296
+[2025-05-13 08:46:25] epoch=93 | Macro-ACC=0.6888, Macro-AUC=0.7826, Micro-ACC=0.7268, Micro-AUC=0.7826, Majority-ACC=0.8748, Majority-AUC=0.9538, Minority-ACC=0.3651, Minority-AUC=0.2890, loss=0.7737
+Patience count: 1/20. Best Macro-AUC so far: 0.7828, current: 0.7826
+[2025-05-13 08:47:40] epoch=94 | Macro-ACC=0.6902, Macro-AUC=0.7831, Micro-ACC=0.7269, Micro-AUC=0.7831, Majority-ACC=0.8748, Majority-AUC=0.9560, Minority-ACC=0.3655, Minority-AUC=0.2802, loss=0.7701
+[2025-05-13 08:48:53] epoch=95 | Macro-ACC=0.6947, Macro-AUC=0.7824, Micro-ACC=0.7239, Micro-AUC=0.7824, Majority-ACC=0.8634, Majority-AUC=0.9596, Minority-ACC=0.3830, Minority-AUC=0.2656, loss=0.7386
+Patience count: 1/20. Best Macro-AUC so far: 0.7831, current: 0.7824
+[2025-05-13 08:50:05] epoch=96 | Macro-ACC=0.6878, Macro-AUC=0.7837, Micro-ACC=0.7273, Micro-AUC=0.7837, Majority-ACC=0.8771, Majority-AUC=0.9545, Minority-ACC=0.3614, Minority-AUC=0.2889, loss=0.7772
+[2025-05-13 08:51:19] epoch=97 | Macro-ACC=0.6913, Macro-AUC=0.7833, Micro-ACC=0.7259, Micro-AUC=0.7833, Majority-ACC=0.8676, Majority-AUC=0.9530, Minority-ACC=0.3798, Minority-AUC=0.2934, loss=0.8033
+Patience count: 1/20. Best Macro-AUC so far: 0.7837, current: 0.7833
+[2025-05-13 08:52:31] epoch=98 | Macro-ACC=0.6934, Macro-AUC=0.7840, Micro-ACC=0.7258, Micro-AUC=0.7840, Majority-ACC=0.8666, Majority-AUC=0.9557, Minority-ACC=0.3817, Minority-AUC=0.2845, loss=0.7715
+[2025-05-13 08:53:45] epoch=99 | Macro-ACC=0.6912, Macro-AUC=0.7843, Micro-ACC=0.7274, Micro-AUC=0.7843, Majority-ACC=0.8717, Majority-AUC=0.9532, Minority-ACC=0.3747, Minority-AUC=0.2930, loss=0.7964
+[2025-05-13 08:54:58] epoch=100 | Macro-ACC=0.6938, Macro-AUC=0.7844, Micro-ACC=0.7255, Micro-AUC=0.7844, Majority-ACC=0.8631, Majority-AUC=0.9529, Minority-ACC=0.3890, Minority-AUC=0.2952, loss=0.7707
+[2025-05-13 08:54:58] Best Macro-AUC on validation: 0.7844
+[2025-05-13 08:55:13] model=GraDKT exp=gamma 0
+Macro-ACC=0.6938, Macro-AUC=0.7844, Micro-ACC=0.7255, Micro-AUC=0.7844, Majority-ACC=0.8631, Majority-AUC=0.9529, Minority-ACC=0.3891, Minority-AUC=0.2952, loss=0.7707
+
+[2025-05-13 08:55:13] All done. (01:46:13)

@@ -1,0 +1,6 @@
+[2025-07-21 20:13:31] model=GraDKTexp=1 Macro-ACC=0.6426, Macro-AUC=0.8117, Micro-ACC=0.7992, Micro-AUC=0.8117, Majority-ACC=0.9691, Majority-AUC=0.9919, Minority-ACC=0.1545, Minority-AUC=0.0840, loss=0.4277 
+[2025-07-21 20:18:19] model=GraDKT exp=1 Macro-ACC=0.6510, Macro-AUC=0.8117, Micro-ACC=0.7998, Micro-AUC=0.8117, Majority-ACC=0.9655, Majority-AUC=0.9915, Minority-ACC=0.1709, Minority-AUC=0.0868, loss=0.4279 
+[2025-07-21 20:30:39] model=GraDKT exp=1 Macro-ACC=0.6440, Macro-AUC=0.8117, Micro-ACC=0.7997, Micro-AUC=0.8117, Majority-ACC=0.9681, Majority-AUC=0.9916, Minority-ACC=0.1610, Minority-AUC=0.0871, loss=0.4279 
+[2025-07-21 20:39:51] model=GraDKT exp=1 Macro-ACC=0.6457, Macro-AUC=0.8116, Micro-ACC=0.7998, Micro-AUC=0.8116, Majority-ACC=0.9656, Majority-AUC=0.9886, Minority-ACC=0.1709, Minority-AUC=0.1068, loss=0.4284 
+[2025-07-21 21:10:12] model=GraDKT exp=1 Macro-ACC=0.6703, Macro-AUC=0.8197, Micro-ACC=0.8019, Micro-AUC=0.8197, Majority-ACC=0.9516, Majority-AUC=0.9838, Minority-ACC=0.2432, Minority-AUC=0.1648, loss=0.4236 
+[2025-07-22 16:35:08] model=GraDKT exp=1 Macro-ACC=0.6810, Macro-AUC=0.8259, Micro-ACC=0.8018, Micro-AUC=0.8259, Majority-ACC=0.9416, Majority-AUC=0.9819, Minority-ACC=0.2803, Minority-AUC=0.1896, loss=0.4180 

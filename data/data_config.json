@@ -1,0 +1,86 @@
+{
+    "ENEM": {
+        "num_user": 10000,
+        "num_question": 185,
+        "num_concept": 185,
+        "num_option": 5,
+        "num_interaction": 1793106,
+        "range_sequence": [
+            10,
+            200
+        ],
+        "max_concept_len": 1,
+        "num_train": 16000,
+        "num_test": 4000,
+        "num_fold": [
+            3200,
+            3200,
+            3200,
+            3200,
+            3200
+        ]
+    },
+    "EdNet": {
+        "num_user": 5000,
+        "num_question": 12055,
+        "num_concept": 189,
+        "num_option": 4,
+        "num_interaction": 585036,
+        "range_sequence": [
+            10,
+            200
+        ],
+        "max_concept_len": 7,
+        "num_train": 7972,
+        "num_test": 1992,
+        "num_fold": [
+            1594,
+            1594,
+            1595,
+            1594,
+            1595
+        ]
+    },
+    "NIPS34": {
+        "num_user": 4918,
+        "num_question": 948,
+        "num_concept": 86,
+        "num_option": 4,
+        "num_interaction": 1382727,
+        "range_sequence": [
+            10,
+            200
+        ],
+        "max_concept_len": 6,
+        "num_train": 14706,
+        "num_test": 3676,
+        "num_fold": [
+            2941,
+            2941,
+            2941,
+            2941,
+            2942
+        ]
+    },
+    "DBE_KT22": {
+        "num_user": 1264,
+        "num_question": 212,
+        "num_concept": 93,
+        "num_option": 5,
+        "num_interaction": 161952,
+        "range_sequence": [
+            10,
+            200
+        ],
+        "max_concept_len": 4,
+        "num_train": 1153,
+        "num_test": 288,
+        "num_fold": [
+            230,
+            231,
+            230,
+            231,
+            231
+        ]
+    }
+}
