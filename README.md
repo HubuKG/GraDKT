@@ -5,7 +5,7 @@ Welcome to the paper **"Gaussian Graph Diffusion with Response Reconstruction fo
 
 ## Model Architecture
 
-<img alt="GraDKT" src="assets/GraDKT_framework.jpg">
+<img alt="GraDKT" src="assets/GraDKT_framework.pdf">
 
 
 ## Experiment Environment
